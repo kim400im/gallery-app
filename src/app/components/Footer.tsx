@@ -1,11 +1,11 @@
-'use client'
+"use client";
 
-import React from 'react'
-import Link from 'next/link'
-import styles from './Footer.module.css'
+import React from "react";
+import Link from "next/link";
+import styles from "./Footer.module.css";
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear()
+  const currentYear = new Date().getFullYear();
 
   return (
     <footer className={styles.footer}>
@@ -19,30 +19,33 @@ const Footer = () => {
               <div className={styles.addressSection}>
                 <h4 className={styles.locationTitle}>K1 - Main Gallery</h4>
                 <p className={styles.address}>
-                  54 Samcheong-ro, Jongno-gu<br />
+                  54 Samcheong-ro, Jongno-gu
+                  <br />
                   Seoul 03049, Korea
                 </p>
               </div>
-              
+
               {/* K2 Hanok Space */}
               <div className={styles.addressSection}>
                 <h4 className={styles.locationTitle}>K2 - Hanok Space</h4>
                 <p className={styles.address}>
-                  40 Samcheong-ro, Jongno-gu<br />
+                  40 Samcheong-ro, Jongno-gu
+                  <br />
                   Seoul 03049, Korea
                 </p>
               </div>
-              
+
               {/* Contact Info */}
               <div className={styles.contactSection}>
                 <p className={styles.contact}>
-                  <strong>Tel:</strong> +82 2 735 8449<br />
+                  <strong>Tel:</strong> +82 2 735 8449
+                  <br />
                   <strong>Email:</strong> info@kukjegallery.com
                 </p>
               </div>
             </div>
           </div>
-          
+
           {/* Gallery Links */}
           <div className={styles.footerSection}>
             <h4 className={styles.sectionTitle}>Gallery</h4>
@@ -53,7 +56,10 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/exhibitions?filter=upcoming" className={styles.footerLink}>
+                <Link
+                  href="/exhibitions?filter=upcoming"
+                  className={styles.footerLink}
+                >
                   Upcoming Shows
                 </Link>
               </li>
@@ -74,7 +80,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          
+
           {/* Visit Links */}
           <div className={styles.footerSection}>
             <h4 className={styles.sectionTitle}>Visit</h4>
@@ -106,14 +112,14 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          
+
           {/* Connect Links */}
           <div className={styles.footerSection}>
             <h4 className={styles.sectionTitle}>Connect</h4>
             <ul className={styles.linkList}>
               <li>
-                <a 
-                  href="https://instagram.com/kukjegallery" 
+                <a
+                  href="https://instagram.com/kukjegallery"
                   className={styles.footerLink}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -122,8 +128,8 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a 
-                  href="https://facebook.com/kukjegallery" 
+                <a
+                  href="https://facebook.com/kukjegallery"
                   className={styles.footerLink}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -132,8 +138,8 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a 
-                  href="https://twitter.com/kukjegallery" 
+                <a
+                  href="https://twitter.com/kukjegallery"
                   className={styles.footerLink}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -154,7 +160,7 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        
+
         {/* Footer Bottom */}
         <div className={styles.footerBottom}>
           <div className={styles.footerBottomContent}>
@@ -176,7 +182,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

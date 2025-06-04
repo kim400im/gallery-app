@@ -1,264 +1,264 @@
 /* Footer Component Styles */
 
 .footer {
-    background-color: black;
-    color: white;
-    padding: 4rem 0 0 0;
+  background-color: black;
+  color: white;
+  padding: 4rem 0 0 0;
+}
+
+.footerContent {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.footerGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+/* Main Gallery Info */
+.footerMain {
+  grid-column: span 1;
+}
+
+.footerTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.footerAddresses {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.addressSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.locationTitle {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+}
+
+.address {
+  color: rgb(209, 213, 219);
+  line-height: 1.6;
+  font-size: 0.875rem;
+}
+
+.contactSection {
+  border-top: 1px solid rgb(55, 65, 81);
+  padding-top: 1.5rem;
+}
+
+.contact {
+  color: rgb(209, 213, 219);
+  line-height: 1.6;
+  font-size: 0.875rem;
+}
+
+.contact strong {
+  color: white;
+  font-weight: 500;
+}
+
+/* Footer Sections */
+.footerSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sectionTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.linkList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.footerLink {
+  color: rgb(209, 213, 219);
+  text-decoration: none;
+  font-size: 0.875rem;
+  transition: all 0.3s ease;
+  line-height: 1.5;
+}
+
+.footerLink:hover {
+  color: white;
+  transform: translateX(0.25rem);
+}
+
+/* Footer Bottom */
+.footerBottom {
+  border-top: 1px solid rgb(55, 65, 81);
+  padding: 2rem 0;
+}
+
+.footerBottomContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  text-align: center;
+}
+
+.copyright {
+  color: rgb(156, 163, 175);
+  font-size: 0.875rem;
+}
+
+.legalLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.legalLink {
+  color: rgb(156, 163, 175);
+  text-decoration: none;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: color 0.3s ease;
+}
+
+.legalLink:hover {
+  color: rgb(209, 213, 219);
+}
+
+/* Responsive Design */
+@media (min-width: 640px) {
+  .footerAddresses {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
   }
-  
-  .footerContent {
-    max-width: 80rem;
-    margin: 0 auto;
-    padding: 0 1.5rem;
+
+  .addressSection {
+    flex: 1;
   }
-  
+
+  .contactSection {
+    border-top: none;
+    border-left: 1px solid rgb(55, 65, 81);
+    padding-left: 2rem;
+    padding-top: 0;
+    flex-shrink: 0;
+  }
+
   .footerGrid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 3rem;
-    margin-bottom: 3rem;
+    grid-template-columns: repeat(2, 1fr);
   }
-  
-  /* Main Gallery Info */
+
+  .footerMain {
+    grid-column: span 2;
+  }
+
+  .footerBottomContent {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+}
+
+@media (min-width: 768px) {
+  .footerAddresses {
+    gap: 3rem;
+  }
+
+  .footerGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer {
+    padding: 5rem 0 0 0;
+  }
+
+  .footerGrid {
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 4rem;
+  }
+
   .footerMain {
     grid-column: span 1;
   }
-  
-  .footerTitle {
-    font-size: 1.5rem;
-    font-weight: bold;
-    letter-spacing: 0.05em;
-    margin-bottom: 2rem;
-    color: white;
-  }
-  
+
   .footerAddresses {
-    display: flex;
     flex-direction: column;
     gap: 2rem;
   }
-  
-  .addressSection {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-  
-  .locationTitle {
-    font-size: 0.875rem;
-    font-weight: 600;
-    color: white;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    margin-bottom: 0.5rem;
-  }
-  
-  .address {
-    color: rgb(209, 213, 219);
-    line-height: 1.6;
-    font-size: 0.875rem;
-  }
-  
+
   .contactSection {
+    border-left: none;
     border-top: 1px solid rgb(55, 65, 81);
+    padding-left: 0;
     padding-top: 1.5rem;
   }
-  
-  .contact {
-    color: rgb(209, 213, 219);
-    line-height: 1.6;
-    font-size: 0.875rem;
-  }
-  
-  .contact strong {
-    color: white;
-    font-weight: 500;
-  }
-  
-  /* Footer Sections */
-  .footerSection {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-  
-  .sectionTitle {
-    font-size: 1rem;
-    font-weight: 600;
-    color: white;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-  }
-  
-  .linkList {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-  }
-  
+}
+
+/* Accessibility and Print Styles */
+@media (prefers-reduced-motion: reduce) {
   .footerLink {
-    color: rgb(209, 213, 219);
-    text-decoration: none;
-    font-size: 0.875rem;
-    transition: all 0.3s ease;
-    line-height: 1.5;
+    transition: none;
   }
-  
-  .footerLink:hover {
-    color: white;
-    transform: translateX(0.25rem);
+}
+
+@media print {
+  .footer {
+    background-color: white !important;
+    color: black !important;
   }
-  
-  /* Footer Bottom */
-  .footerBottom {
-    border-top: 1px solid rgb(55, 65, 81);
-    padding: 2rem 0;
+
+  .footerTitle,
+  .sectionTitle,
+  .locationTitle,
+  .contact strong {
+    color: black !important;
   }
-  
-  .footerBottomContent {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .copyright {
-    color: rgb(156, 163, 175);
-    font-size: 0.875rem;
-  }
-  
-  .legalLinks {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    justify-content: center;
-  }
-  
+
+  .footerLink,
+  .address,
+  .contact,
+  .copyright,
   .legalLink {
-    color: rgb(156, 163, 175);
-    text-decoration: none;
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    transition: color 0.3s ease;
+    color: #333 !important;
   }
-  
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+  .footerLink:hover {
+    text-decoration: underline;
+  }
+
   .legalLink:hover {
-    color: rgb(209, 213, 219);
+    text-decoration: underline;
   }
-  
-  /* Responsive Design */
-  @media (min-width: 640px) {
-    .footerAddresses {
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: flex-start;
-    }
-    
-    .addressSection {
-      flex: 1;
-    }
-    
-    .contactSection {
-      border-top: none;
-      border-left: 1px solid rgb(55, 65, 81);
-      padding-left: 2rem;
-      padding-top: 0;
-      flex-shrink: 0;
-    }
-    
-    .footerGrid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-    
-    .footerMain {
-      grid-column: span 2;
-    }
-    
-    .footerBottomContent {
-      flex-direction: row;
-      justify-content: space-between;
-      text-align: left;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .footerAddresses {
-      gap: 3rem;
-    }
-    
-    .footerGrid {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    .footer {
-      padding: 5rem 0 0 0;
-    }
-    
-    .footerGrid {
-      grid-template-columns: 2fr 1fr 1fr 1fr;
-      gap: 4rem;
-    }
-    
-    .footerMain {
-      grid-column: span 1;
-    }
-    
-    .footerAddresses {
-      flex-direction: column;
-      gap: 2rem;
-    }
-    
-    .contactSection {
-      border-left: none;
-      border-top: 1px solid rgb(55, 65, 81);
-      padding-left: 0;
-      padding-top: 1.5rem;
-    }
-  }
-  
-  /* Accessibility and Print Styles */
-  @media (prefers-reduced-motion: reduce) {
-    .footerLink {
-      transition: none;
-    }
-  }
-  
-  @media print {
-    .footer {
-      background-color: white !important;
-      color: black !important;
-    }
-    
-    .footerTitle,
-    .sectionTitle,
-    .locationTitle,
-    .contact strong {
-      color: black !important;
-    }
-    
-    .footerLink,
-    .address,
-    .contact,
-    .copyright,
-    .legalLink {
-      color: #333 !important;
-    }
-  }
-  
-  /* High contrast mode */
-  @media (prefers-contrast: high) {
-    .footerLink:hover {
-      text-decoration: underline;
-    }
-    
-    .legalLink:hover {
-      text-decoration: underline;
-    }
-  }
+}

@@ -357,7 +357,11 @@
 
 .exhibitionImageContainer {
   aspect-ratio: 3/4;
-  background: linear-gradient(to bottom, rgb(229, 231, 235), rgb(156, 163, 175));
+  background: linear-gradient(
+    to bottom,
+    rgb(229, 231, 235),
+    rgb(156, 163, 175)
+  );
   margin-bottom: 1rem;
   overflow: hidden;
 }
@@ -604,47 +608,47 @@
   .headerContent {
     padding: 1rem 1.5rem;
   }
-  
+
   .logo {
     font-size: 1.5rem;
   }
-  
+
   .heroContent {
     padding: 0 1.5rem;
   }
-  
+
   .heroTitle {
     font-size: 3rem;
   }
-  
+
   .heroButtons {
     flex-direction: row;
   }
-  
+
   .heroImageShape {
     width: 8rem;
     height: 8rem;
   }
-  
+
   .heroImageDecoBottom {
     width: 6rem;
     height: 6rem;
   }
-  
+
   .heroImageDecoTop {
     width: 4rem;
     height: 4rem;
   }
-  
+
   .exhibitionsGrid {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
   }
-  
+
   .footerGrid {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   .footerMain {
     grid-column: span 2;
   }
@@ -654,51 +658,51 @@
   .nav {
     display: flex;
   }
-  
+
   .mobileMenuButton {
     display: none;
   }
-  
+
   .heroContent {
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
   }
-  
+
   .heroText {
     order: 1;
   }
-  
+
   .heroImage {
     order: 2;
   }
-  
+
   .heroTitle {
     font-size: 4.5rem;
   }
-  
+
   .exhibitionsGrid {
     grid-template-columns: repeat(3, 1fr);
   }
-  
+
   .aboutContent {
     grid-template-columns: repeat(2, 1fr);
     gap: 4rem;
   }
-  
+
   .aboutImageGrid {
     gap: 1rem;
     padding: 2rem;
   }
-  
+
   .aboutImageGridItem {
     width: 4rem;
     height: 4rem;
   }
-  
+
   .footerGrid {
     grid-template-columns: repeat(4, 1fr);
   }
-  
+
   .footerMain {
     grid-column: span 2;
   }
