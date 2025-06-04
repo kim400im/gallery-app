@@ -28,7 +28,7 @@ const Header = () => {
     <header className={`${styles.header} ${isScrolled ? styles.scrolled : ""}`}>
       <div className={styles.headerContent}>
         <Link href="/" className={styles.logo}>
-          SEONG GALLERY
+          Gallery Epoch
         </Link>
 
         {/* Desktop Navigation */}
